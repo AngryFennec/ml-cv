@@ -1,4 +1,4 @@
-##Yolo v3 demo image classification
+## Yolo v3 demo image classification
 
 Virtual environment created using poetry
 
