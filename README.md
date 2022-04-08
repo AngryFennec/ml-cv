@@ -1,12 +1,24 @@
 ## Yolo v3 demo image classification
 
+### Task 2 instructions
+
+#### Building package
+0. Remove `dist` folder, if you want to check my work
+1. If you don't have `build` package - firstly, let's install it. Just use `python3 -m pip install build` on Unix/Max or `python -m pip install build` on Windows
+2. Change directory to yolo-demo: `cd yolo-demo`
+3. Run build command: `python 3 -m build` on Unix/Max or `python -m build` on Windows
+4. The `dist` folder appears, there are two package files inside: `.tar.gz` and `.wheel`
+
+### Task 1 instructions
+
 Virtual environment created using poetry
 
 To run, follow these steps:
 1. switch to `yolo-demo` directory: `cd yolo-demo`
 2. install dependencies using poetry: `poetry install`. If you don't have poetry on your system, you'll need to install it first with this doc: https://python-poetry.org/docs/#installation. During my work, I also installed pyenv to switch global python version.
-3. use `poetry shell` to run shell
-4. inside the shell, run `python demo.py` on Windows or `python3 demo.py` on nix systems
+3. switch to `yolo_demo` directory: `cd yolo_demo`
+4. use `poetry shell` to run shell
+5. inside the shell, run `python demo.py` on Windows or `python3 demo.py` on nix systems
 
 After these steps, you'll see cat image with detected and classified cat
 
