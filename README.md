@@ -9,6 +9,10 @@
 3. Run build command: `python 3 -m build` on Unix/Max or `python -m build` on Windows
 4. The `dist` folder appears, there are two package files inside: `.tar.gz` and `.wheel`
 
+#### Install from git
+Use command `pip install git+https://github.com/AngryFennec/ml-cv.git@0.10.1`
+Or check `https://github.com/AngryFennec/ml-cv/tags` tags list and use custom tag number in the command above
+
 ### Task 1 instructions
 
 Virtual environment created using poetry
