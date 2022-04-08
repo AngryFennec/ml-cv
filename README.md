@@ -15,8 +15,6 @@
 #### Install from git
 Use command `pip install git+https://github.com/AngryFennec/ml-cv.git@0.11.0`
 
-Or check `https://github.com/AngryFennec/ml-cv/tags` tags list and use custom tag number in the command above
-
 ### Task 1 instructions
 
 Virtual environment created using poetry
