@@ -13,7 +13,7 @@
 
 import core.common as common
 import tensorflow as tf
-import core.dataset as dataset
+import yolo_demo.core.dataset as dataset
 
 def darknet53_whole(input_data, trainable):
 
