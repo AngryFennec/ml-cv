@@ -10,7 +10,7 @@
 4. The `dist` folder appears, there are two package files inside: `.tar.gz` and `.wheel`
 5. Switch to `dist` folder with `cd dist`
 6. Use command `pip install yolo_demo-0.1.0.tar.gz` to install package
-7. After installation, you can use command `yolo-demo` in console to watch demo
+7. After installation, you can use command `yolo-demo` in console to watch demo OR change directory to yolo-demo/yolo_demo and run python demo.py
 
 #### Install from git
 Use command `pip install git+https://github.com/AngryFennec/ml-cv.git@0.11.0`
