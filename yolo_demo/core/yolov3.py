@@ -13,10 +13,10 @@
 #coco.names
 import numpy as np
 import tensorflow as tf
-import core.utils as utils
-import core.common as common
-import core.backbone as backbone
-from core.config import cfg
+import yolo_demo.core.utils as utils
+import yolo_demo.core.common as common
+import yolo_demo.core.backbone as backbone
+from yolo_demo.core.config import cfg
 
 
 class YOLOV3(object):

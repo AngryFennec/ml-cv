@@ -5,7 +5,7 @@ packages = \
 ['yolo_demo', 'yolo_demo.core']
 
 package_data = \
-{'': ['*'], 'yolo_demo': ['data/*', 'data/classes/*', 'saved_model/*']}
+{'': ['*'], 'yolo_demo': ['data/*', 'core/*', 'data/classes/*', 'data/classes/voc.names', 'saved_model/*']}
 
 install_requires = \
 ['Pillow>=9.0.1,<10.0.0',
@@ -14,9 +14,14 @@ install_requires = \
  'opencv-python>=4.5.5,<5.0.0',
  'tensorflow==2.8.0']
 
+entry_points = {
+    'console_scripts': [
+        'yolo_demo=yolo_demo.demo:start',
+    ]}
+
 setup_kwargs = {
-    'name': 'yolo-demo',
-    'version': '0.1.0',
+    'name': 'yolo_demo',
+    'version': '0.11.0',
     'description': '',
     'long_description': None,
     'author': 'Angry Fennec',
@@ -28,6 +33,7 @@ setup_kwargs = {
     'package_data': package_data,
     'install_requires': install_requires,
     'python_requires': '>=3.9,<3.11',
+    'entry_points': entry_points,
 }
 
 

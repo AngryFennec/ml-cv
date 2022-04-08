@@ -16,8 +16,8 @@ import cv2
 import random
 import numpy as np
 import tensorflow as tf
-import core.utils as utils
-from core.config import cfg
+import yolo_demo.core.utils as utils
+from yolo_demo.core.config import cfg
 
 
 class Dataset(object):
