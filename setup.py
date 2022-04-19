@@ -30,7 +30,7 @@ entry_points = {
 
 setup_kwargs = {
     "name": "yolo_demo",
-    "version": "0.11.0",
+    "version": "0.12.0",
     "description": "",
     "long_description": None,
     "author": "Angry Fennec",

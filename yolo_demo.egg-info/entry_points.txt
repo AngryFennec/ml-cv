@@ -1,0 +1,2 @@
+[console_scripts]
+yolo_demo = yolo_demo.demo:start
