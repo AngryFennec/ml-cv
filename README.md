@@ -1,5 +1,29 @@
 ## Yolo v3 demo image classification
 
+### Task 3 instructions
+In this task, I add some styling tools (`flake8` and `black`).
+Also, `pre-commit` tool for using styling tools during commit.
+Just run `poetry install` to install all requirements.
+
+Configs are in `pyproject.toml` and in `.pre-commit-config.yaml`
+
+To check, you can make some changes, then type 
+
+```git add -A```
+
+```git commit -m "some changes"```
+
+and watch, how these tools are work. If there are some errors in the project - `black` tool
+automatically fix them, and `flake8` tool print error log in console.
+After fixing errors, you need to make git commands again.
+
+To check file before commit, use commands:
+
+```black demo.py```
+
+```flake8 demo.py```
+
+
 ### Task 2 instructions
 
 #### Building package
