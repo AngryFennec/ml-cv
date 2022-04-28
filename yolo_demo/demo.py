@@ -20,14 +20,13 @@ import os
 pth = os.path.abspath(os.path.dirname(__file__)).replace(os.sep, "/")
 
 
-def start():
+def start(image_path=pth + "/data/cat.jpg", need_to_show=True):
     return_elements = [
         "input/input_data:0",
         "pred_sbbox/concat_2:0",
         "pred_lbbox/concat_2:0",
     ]
     pb_file = pth + "/yolov3_nano_416.pb"
-    image_path = pth + "/data/cat.jpg"
     num_classes = 20
     input_size = 416
     graph = tf.Graph()
@@ -65,11 +64,14 @@ def start():
         bboxes = utils.nms(bboxes, 0.45, method="nms")
         image = utils.draw_bbox(frame, bboxes)
 
-        cv2.namedWindow("result", cv2.WINDOW_AUTOSIZE)
         result = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-        cv2.imshow("result", result)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+
+        if need_to_show:
+            cv2.namedWindow("result", cv2.WINDOW_AUTOSIZE)
+            cv2.imshow("result", result)
+            cv2.waitKey(0)
+            cv2.destroyAllWindows()
+        return result
 
 
 start()
