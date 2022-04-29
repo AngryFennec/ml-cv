@@ -17,7 +17,7 @@ To check artifacts, select job in Actions, for example:
 
 https://github.com/AngryFennec/ml-cv/actions/runs/2247140778
 
-In the bottom you can see Artifacts and download package^
+In the bottom you can see Artifacts and download package:
 
 ![img.png](img.png)
 
