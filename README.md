@@ -11,7 +11,15 @@ To check CI part of the task, follow the link:
 
 https://github.com/AngryFennec/ml-cv/actions
 
-CI check flake, pytest and then make build and push it to the dist folder.
+CI check flake, pytest and then make build and push it to the Artifacts.
+
+To check artifacts, select job in Actions, for example:
+
+https://github.com/AngryFennec/ml-cv/actions/runs/2247140778
+
+In the bottom you can see Artifacts and download package^
+
+![img.png](img.png)
 
 
 ### Task 3 instructions

@@ -2,3 +2,4 @@
 yolo_demo.egg-info
 __pycache__/
 .pytest_cache
+yolo_demo/__pycache__/
