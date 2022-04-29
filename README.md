@@ -1,5 +1,13 @@
 ## Yolo v3 demo image classification
 
+### Task 4 instructions
+In this task. I add tests: regression test and test for big and small images.
+
+To run tests, use this command:
+
+```python -m pytest```
+
+
 ### Task 3 instructions
 In this task, I add some styling tools (`flake8` and `black`).
 Also, `pre-commit` tool for using styling tools during commit.
