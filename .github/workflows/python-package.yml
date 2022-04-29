@@ -43,7 +43,6 @@ jobs:
     - name: Run package creation
       run: |
         rm -r dist
-        cd yolo_demo
         python -m pip install --upgrade build
         pip install build
         python -m build
