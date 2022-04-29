@@ -5,7 +5,7 @@ description = ""
 authors = ["Angry Fennec <shellfix@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.11"
+python = "~=3.9"
 numpy = "^1.22.3"
 opencv-python = "^4.5.5"
 Pillow = "^9.0.1"
