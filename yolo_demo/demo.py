@@ -74,4 +74,4 @@ def start(image_path=pth + "/data/cat.jpg", need_to_show=True):
         return result
 
 
-start()
+# start()
