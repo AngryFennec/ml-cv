@@ -7,6 +7,12 @@ To run tests, use this command:
 
 ```python -m pytest```
 
+To check CI part of the task, follow the link:
+
+https://github.com/AngryFennec/ml-cv/actions
+
+CI check flake, pytest and then make build and push it to the dist folder.
+
 
 ### Task 3 instructions
 In this task, I add some styling tools (`flake8` and `black`).
