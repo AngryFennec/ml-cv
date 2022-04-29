@@ -7,7 +7,6 @@ pth = os.path.abspath(os.path.dirname(__file__)).replace(os.sep, "/")
 
 
 def test_regress():
-    assert False
     fact_result = demo.start(
         image_path=pth + "/test_data/source.jpg", need_to_show=False
     )
