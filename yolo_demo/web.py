@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-import demo
+from yolo_demo import demo
 
 
 def main():

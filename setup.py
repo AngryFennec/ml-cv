@@ -20,10 +20,12 @@ install_requires = [
     "numpy>=1.22.3,<2.0.0",
     "opencv-python>=4.5.5,<5.0.0",
     "tensorflow==2.8.0",
+    "streamlit==1.8.1",
 ]
 
 entry_points = {
     "console_scripts": [
+        # "yolo_web=streamlit run yolo_demo.web.py",
         "yolo_demo=yolo_demo.demo:start",
     ]
 }
@@ -34,14 +36,13 @@ setup_kwargs = {
     "description": "",
     "long_description": None,
     "author": "Angry Fennec",
-    "author_email": "shellfix@gmail.com",
     "maintainer": None,
     "maintainer_email": None,
     "url": None,
     "packages": packages,
     "package_data": package_data,
     "install_requires": install_requires,
-    "python_requires": ">=3.9,<3.11",
+    "python_requires": ">=3.9,<3.10",
     "entry_points": entry_points,
 }
 
