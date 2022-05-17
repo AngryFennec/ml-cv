@@ -1,5 +1,26 @@
 ## Yolo v3 demo image classification
 
+### Task 5 instructions
+
+#### Web demo
+In folder yolo_demo, you can find `web.py` script, which contains web demo.
+To run, install package (use local version from `dist` directory)
+and then use command `streamlit run web.py` in folder `yolo_demo`.
+Streamlit app will work at `localhost:8501`.
+
+You can choose jpg image from your own or use mine from
+`yolo_demo/data/cat.jpg`
+
+#### Docker build
+To create docker image, install Docker to your system. Then use the command:
+
+`docker build -t yolo ./`
+
+After building, use command 
+
+`docker run -p 8501:8501 yolo`
+
+and you'll see web demo at `localhost:8501`
 ### Task 4 instructions
 In this task. I add tests: regression test and test for big and small images.
 
