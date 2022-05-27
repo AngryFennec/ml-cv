@@ -20,7 +20,9 @@ import os
 pth = os.path.abspath(os.path.dirname(__file__)).replace(os.sep, "/")
 
 
-def start(image_path=pth + "/data/cat.jpg", need_to_show=True):
+def start(
+    image_path=pth + "/data/cat.jpg", need_to_show=True, image_file=None
+):
     return_elements = [
         "input/input_data:0",
         "pred_sbbox/concat_2:0",
@@ -38,7 +40,13 @@ def start(image_path=pth + "/data/cat.jpg", need_to_show=True):
     print("output2.name =", return_tensors[2].name)
 
     with tf.compat.v1.Session(graph=graph) as sess:
-        frame = cv2.imread(image_path, cv2.COLOR_BGR2RGB)
+        if image_file is None:
+            # path to image
+            frame = cv2.imread(image_path, cv2.COLOR_BGR2RGB)
+        else:
+            # image from upload on streamlit
+            frame = cv2.cvtColor(image_file, cv2.COLOR_BGR2RGB)
+
         frame_size = frame.shape[:2]
         image_data = utils.image_preporcess(
             np.copy(frame), [input_size, input_size]
@@ -64,7 +72,10 @@ def start(image_path=pth + "/data/cat.jpg", need_to_show=True):
         bboxes = utils.nms(bboxes, 0.45, method="nms")
         image = utils.draw_bbox(frame, bboxes)
 
-        result = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        if image_file is None:
+            result = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        else:
+            result = image
 
         if need_to_show:
             cv2.namedWindow("result", cv2.WINDOW_AUTOSIZE)
