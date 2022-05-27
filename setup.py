@@ -17,7 +17,7 @@ package_data = {
 install_requires = [
     "Pillow>=9.0.1,<10.0.0",
     "easydict>=1.9,<2.0",
-    "numpy>=1.22.3,<2.0.0",
+    "numpy>=1.21.0,<2.0.0",
     "opencv-python>=4.5.5,<5.0.0",
     "tensorflow==2.8.0",
 ]

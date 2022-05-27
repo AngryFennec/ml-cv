@@ -6,11 +6,12 @@ authors = ["Angry Fennec <shellfix@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "~=3.9"
-numpy = "^1.22.3"
+numpy = "^1.21.0"
 opencv-python = "^4.5.5"
 Pillow = "^9.0.1"
 tensorflow = "2.8.0"
 easydict = "^1.9"
+streamlit = "^1.8.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
