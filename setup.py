@@ -15,7 +15,6 @@ package_data = {
 }
 
 install_requires = [
-    "python>=3.9,<3.10",
     "Pillow>=9.0.1,<10.0.0",
     "easydict>=1.9,<2.0",
     "numpy>=1.21.0,<2.0.0",
